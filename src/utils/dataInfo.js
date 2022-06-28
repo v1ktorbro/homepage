@@ -1,13 +1,18 @@
-const data = {
+export const dataInfo = {
   en: {
     name: 'Abrosimov Viktor',
-    profession: 'Frontend dev',
-    stack: 'JS, ReactJS, ExpressJS, MongoDb, Git, Ubuntu Server, Nginx, Sass, HTML',
-    educationLink: 'https://yadi.sk/i/6IQJoZOdy10JeA',
-    contacts: {
-      telegram: 'viktorAbr',
-      email: 'vitya.abrosimoff2016.ya.ru',
-    },
+    profession: 'Frontend dev.',
+    stack: 'JavaSript, ReactJS, ExpressJS, MongoDb, Git, Ubuntu Server, Nginx, Sass, Html.',
+    educationsLinks: [
+      {
+        organisation: 'Yandex.Practicum',
+        link: 'https://yadi.sk/i/6IQJoZOdy10JeA',
+      },
+    ],
+    contacts: [
+      { telegram: 'viktorAbr' },
+      { email: 'vitya.abrosimoff2016.ya.ru' },
+    ],
     note: 'All files README.md to the gitHub repo in Russian language.',
     portfolio: [
       {
@@ -38,6 +43,12 @@ const data = {
         title: 'Mesto-auth',
         webLink: 'https://mesto-auth.abrosimov.site/',
         gitHubLink: 'https://github.com/v1ktorbro/mesto-auth/',
+        note: '',
+      },
+      {
+        title: 'Russian travel',
+        webLink: 'https://russian-travel.abrosimov.site/',
+        gitHubLink: 'https://github.com/v1ktorbro/russian-travel/',
         note: '',
       },
     ],
