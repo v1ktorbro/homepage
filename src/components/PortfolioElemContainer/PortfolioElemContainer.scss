@@ -1,0 +1,86 @@
+$cursorPointerThemeDay: url('../../images/cursor_pointer_day_theme.svg'), pointer;
+$imageGoPageThemeDay: url('../../images/btn_open_link_theme_day.svg');
+$imageGitHubThemeDay: url('../../images/icon_github_theme_day.svg');
+$cursorPointerThemeNight: url('../../images/cursor_pointer_night_theme.svg'), pointer;
+$imageGoPageThemeNight: url('../../images/btn_open_link_theme_night.svg');
+$imageGitHubThemeNight: url('../../images/icon_github_theme_night.svg');
+
+.portfolio-elem-container {
+  margin-top: 15px;
+  font-size: 24px;
+  line-height: 26px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.portfolio-elem-container__title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.portfolio-elem-container__btn-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+.portfolio-elem-container__link {
+  display: flex;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: inherit;
+  &_disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: .3;
+  }
+  &_theme-day {
+    cursor: $cursorPointerThemeDay;
+  }
+  &_theme-night {
+    cursor: $cursorPointerThemeNight;
+  }
+}
+
+.portfolio-elem-container__image-go {
+  margin-right: 5px;
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  &_theme-day {
+    background-image: $imageGoPageThemeDay;
+  }
+  &_theme-night {
+    background-image: $imageGoPageThemeNight;
+  }
+}
+
+.portfolio-elem-container__image-gitHub {
+  margin-left: 15px;
+  margin-right: 5px;
+  background-size: 27px 27px;
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  &_theme-day {
+    background-image: $imageGitHubThemeDay;
+  }
+  &_theme-night {
+    background-image: $imageGitHubThemeNight;
+  }
+}
+
+.portfolio-elem-container__note {
+  font-style: italic;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 20px;
+}
