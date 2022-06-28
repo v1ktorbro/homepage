@@ -1,0 +1,40 @@
+$cursorPointerThemeDay: url('../../images/cursor_pointer_day_theme.svg'), pointer;
+$imageGoPageThemeDay: url('../../images/btn_open_link_theme_day.svg');
+$cursorPointerThemeNight: url('../../images/cursor_pointer_night_theme.svg'), pointer;
+$imageGoPageThemeNight: url('../../images/btn_open_link_theme_night.svg');
+.education-element-container {
+  list-style-type: none;
+  margin-top: 15px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.education-element-container__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  display: flex;
+  &_theme-day {
+    cursor: $cursorPointerThemeDay;
+  }
+  &_theme-night {
+    cursor: $cursorPointerThemeNight;
+  }
+}
+
+.education-element-container__link-image {
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 5px;
+  &_theme-day {
+    background-image: $imageGoPageThemeDay;
+  }
+  &_theme-night {
+    background-image: $imageGoPageThemeNight;
+  }
+}
