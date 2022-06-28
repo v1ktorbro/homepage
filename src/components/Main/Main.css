@@ -1,6 +1,16 @@
 .main {
   font-family: "Didot";
   margin-top: 80px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0 20px;
+}
+
+.main__block-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main__title {
@@ -11,19 +21,22 @@
 }
 
 .main__subtitle {
+  margin: 0;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   font-size: 26px;
   line-height: 28px;
   font-weight: bold;
-  margin: 0;
-  margin-top: 20px;
 }
 .main__subtitle_profession {
-  margin-top: 5px;
+  margin-top: 0px;
+  font-size: 20px;
+  line-height: 22px;
+  font-style: italic;
 }
 .main__subtitle_stack {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .main__subtitle-text-elem {
@@ -34,22 +47,4 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-}
-.main__subtitle-text-elem_link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.portfolio-elem-container__image-open-page {
-  background-size: 25px 25px;
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  margin-right: 5px;
-}
-.portfolio-elem-container__image-open-page_theme-day {
-  background-image: url("../../images/btn_open_link_theme_day.svg");
-}
-.portfolio-elem-container__image-open-page_theme-night {
-  background-image: url("../../images/btn_open_link_theme_night.svg");
 }
