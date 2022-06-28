@@ -1,0 +1,59 @@
+$imageGoPageThemeDay: url('../../images/btn_open_link_theme_day.svg');
+$imageGoPageThemeNight: url('../../images/btn_open_link_theme_night.svg');
+
+.main {
+  font-family: 'Didot';
+  // border: 1px solid #000;
+  margin-top: 80px;
+}
+
+.main__title {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.main__subtitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 20px;
+  &_profession {
+    margin-top: 5px;
+  }
+  &_stack {
+    margin-top: 80px;
+  }
+}
+
+.main__subtitle-text-elem {
+  display: flex;
+  max-width: 600px;
+  padding-left: 60px;
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  &_link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.portfolio-elem-container__image-open-page {
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 5px;
+  &_theme-day {
+    background-image: $imageGoPageThemeDay;
+  }
+  &_theme-night {
+    background-image: $imageGoPageThemeNight;
+  }
+}
