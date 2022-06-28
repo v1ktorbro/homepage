@@ -1,7 +1,11 @@
 .header {
   width: 100%;
-  border: 1px solid red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.header__title {
+  font-family: "Didot";
+  font-weight: normal;
 }
