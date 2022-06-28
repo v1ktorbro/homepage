@@ -1,0 +1,19 @@
+$btnImageThemeNight: url('../../images/btn_switch_theme_night.svg');
+$btnImageThemeDay: url('../../images/btn_switch_theme_day.svg');
+
+.btn-switch-theme {
+  width: 25px;
+  height: 25px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  background-color: transparent;
+  background-size: cover;
+  cursor: pointer;
+  &_theme-day {
+    background-image: $btnImageThemeDay;
+  }
+  &_theme-night {
+    background-image: $btnImageThemeNight;
+  }
+}
