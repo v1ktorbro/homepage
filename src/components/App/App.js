@@ -1,11 +1,13 @@
 import './App.css';
 import React from 'react';
-import Header from '../Header/Header';
 import Main from '../Main/Main';
 import { CurrentThemeContext, defaultTheme} from '../../context/CurrentThemeContext';
+import CurrentDataInfoContext from '../../context/CurrentDataInfoContext';
+import { dataInfo } from '../../utils/dataInfo';
 
 function App() {
   const [theme, setTheme] = React.useState(localStorage.getItem('color-theme') || defaultTheme);
+  const [pageDataInfo] = React.useState(dataInfo['en']);
 
   React.useEffect(() => {
     localStorage.setItem('color-theme', theme);
@@ -15,12 +17,9 @@ function App() {
   return (
     <>
       <CurrentThemeContext.Provider value={theme}>
-        <Header
-          setTheme={setTheme}
-        />
-        <Main 
-          
-        />
+      <CurrentDataInfoContext.Provider value={pageDataInfo}>
+        <Main setTheme={setTheme} />
+      </CurrentDataInfoContext.Provider>
       </CurrentThemeContext.Provider>
     </>
   );
