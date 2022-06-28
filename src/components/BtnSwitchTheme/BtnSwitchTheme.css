@@ -6,11 +6,13 @@
   outline: none;
   background-color: transparent;
   background-size: cover;
-  cursor: pointer;
+  align-self: center;
 }
 .btn-switch-theme_theme-day {
   background-image: url("../../images/btn_switch_theme_day.svg");
+  cursor: url("../../images/cursor_pointer_day_theme.svg"), pointer;
 }
 .btn-switch-theme_theme-night {
   background-image: url("../../images/btn_switch_theme_night.svg");
+  cursor: url("../../images/cursor_pointer_night_theme.svg"), pointer;
 }

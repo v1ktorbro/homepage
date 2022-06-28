@@ -1,5 +1,7 @@
-$btnImageThemeNight: url('../../images/btn_switch_theme_night.svg');
 $btnImageThemeDay: url('../../images/btn_switch_theme_day.svg');
+$cursorPointerThemeDay: url('../../images/cursor_pointer_day_theme.svg'), pointer;
+$cursorPointerThemeNight: url('../../images/cursor_pointer_night_theme.svg'), pointer;
+$btnImageThemeNight: url('../../images/btn_switch_theme_night.svg');
 
 .btn-switch-theme {
   width: 25px;
@@ -9,11 +11,13 @@ $btnImageThemeDay: url('../../images/btn_switch_theme_day.svg');
   outline: none;
   background-color: transparent;
   background-size: cover;
-  cursor: pointer;
+  align-self: center;
   &_theme-day {
     background-image: $btnImageThemeDay;
+    cursor: $cursorPointerThemeDay;
   }
   &_theme-night {
     background-image: $btnImageThemeNight;
+    cursor: $cursorPointerThemeNight;
   }
 }
