@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__title {
+  font-family: 'Didot';
+  font-weight: normal;
+}
+
+.header__btn-block {
+  // align-self: center;
+}
