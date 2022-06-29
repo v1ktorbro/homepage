@@ -13,10 +13,10 @@ function PortfolioElemContainer({ data }) {
           <span className={`portfolio-elem-container__image-go portfolio-elem-container__image-go_theme-${theme}`} />Go
         </a>
         <a href={data.gitHubLink} className={`portfolio-elem-container__link ${data.gitHubLink ? '' : 'portfolio-elem-container__link_disabled'} portfolio-elem-container__link_theme-${theme}`} target={'_blank'} rel="noreferrer">
-          <span className={`portfolio-elem-container__image-gitHub portfolio-elem-container__image-gitHub_theme-${theme}`} />GitHub
+          <span className={`portfolio-elem-container__image-gitHub portfolio-elem-container__image-gitHub_theme-${theme}`} />GitHub{data.gitHubLink ? '' : '*'}
         </a>
       </div>
-      {data.note && <p className='portfolio-elem-container__note'>&#42;{data.note}</p>}
+      {data.note && <p className='portfolio-elem-container__note'>&#42; {data.note}</p>}
     </li>
   );
 }
