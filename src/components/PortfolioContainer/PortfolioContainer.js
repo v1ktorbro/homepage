@@ -5,10 +5,10 @@ import PortfolioElemContainer from '../PortfolioElemContainer/PortfolioElemConta
 
 function PortfolioContainer() {
   const pageDataInfo = React.useContext(CurrentDataInfoContext);
-
+  
   return (
     <div className='portfolio-container'>
-      <h2 className='portfolio-container__title'>Portfolio:</h2>
+      <h2 className='portfolio-container__title'>{`Portfolio${pageDataInfo.note ? '*' : ''} :`}</h2>
       <ol className={`portfolio-container__list`}>
         {pageDataInfo.portfolio.map((itemList, index) => {
           return (
@@ -19,6 +19,7 @@ function PortfolioContainer() {
           );
         })}
       </ol>
+      {pageDataInfo.note && <p className='portfolio-container__note'>&#42; {pageDataInfo.note}</p>}
     </div>
   );
 }
