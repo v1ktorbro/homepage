@@ -2,6 +2,7 @@ $cursorPointerThemeDay: url('../../images/cursor_pointer_day_theme.svg'), pointe
 $imageGoPageThemeDay: url('../../images/btn_open_link_theme_day.svg');
 $cursorPointerThemeNight: url('../../images/cursor_pointer_night_theme.svg'), pointer;
 $imageGoPageThemeNight: url('../../images/btn_open_link_theme_night.svg');
+
 .education-element-container {
   list-style-type: none;
   margin-top: 15px;
@@ -17,6 +18,7 @@ $imageGoPageThemeNight: url('../../images/btn_open_link_theme_night.svg');
   font-size: 24px;
   line-height: 26px;
   display: flex;
+  align-items: center;
   &_theme-day {
     cursor: $cursorPointerThemeDay;
   }
@@ -26,9 +28,9 @@ $imageGoPageThemeNight: url('../../images/btn_open_link_theme_night.svg');
 }
 
 .education-element-container__link-image {
-  background-size: 25px 25px;
-  width: 25px;
-  height: 25px;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   margin-right: 5px;
   &_theme-day {
