@@ -2,7 +2,7 @@ export const dataInfo = {
   en: {
     name: 'Abrosimov Viktor',
     profession: 'Frontend dev.',
-    stack: 'JavaSript, ReactJS, ExpressJS, MongoDb, Git, Ubuntu Server, Nginx, Sass, Html.',
+    stack: 'JavaSript, ReactJS, CSS, HTML, Webpack, NodeJS, ExpressJS, MongoDb, Git, Ubuntu Server, Nginx, Sass.',
     educationsLinks: [
       {
         organisation: 'Yandex.Practicum',
@@ -10,8 +10,16 @@ export const dataInfo = {
       },
     ],
     contacts: [
-      { telegram: 'viktorAbr' },
-      { email: 'vitya.abrosimoff2016.ya.ru' },
+      {
+        nameService: 'telegram',
+        value: 'viktorAbr',
+        link: 'https://t.me/viktorAbr/'
+      },
+      {
+        nameService: 'email',
+        value: 'vitya.abrosimoff2016@ya.ru',
+        link: 'mailto:vitya.abrosimoff2016@ya.ru?subject=Открыта%20вакансия%20фронтенд%20разработчика...&body=Виктор,%20привет!'
+      },
     ],
     note: 'All files README.md to the gitHub repo in Russian language.',
     portfolio: [
