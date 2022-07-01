@@ -45,3 +45,20 @@
 .contact-element-container__link-image_theme-night#email {
   background-image: url("../../images/icon_email_theme_night.svg");
 }
+
+@media screen and (max-width: 900px) {
+  .contact-element-container {
+    margin-top: 10px;
+  }
+
+  .contact-element-container__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contact-element-container__link-image {
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
