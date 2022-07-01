@@ -1,8 +1,14 @@
 .main {
   font-family: "Didot";
-  border: 1px solid black;
+  border: 1px solid;
   margin: 50px;
-  padding: 60px 20px 60px 40px;
+  padding: 80px 40px 60px 40px;
+}
+.main_theme-day {
+  color: #000;
+}
+.main_theme-night {
+  color: #fff;
 }
 
 .main__block-title {
@@ -29,8 +35,8 @@
 }
 .main__subtitle_profession {
   margin-top: 0px;
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 24px;
   font-style: italic;
 }
 .main__subtitle_stack {
@@ -45,4 +51,85 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+  max-width: 550px;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    margin: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .main__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .main__subtitle {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .main__subtitle_stack {
+    margin-top: 30px;
+  }
+
+  .main__subtitle-text-elem {
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main {
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .main__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .main__subtitle_stack {
+    margin-top: 25px;
+  }
+
+  .main__subtitle-text-elem {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 35px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main {
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+
+  .main__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .main__subtitle-text-elem {
+    max-width: 280px;
+    padding-left: 30px;
+  }
+
+  .main__subtitle_profession {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .main__subtitle_stack {
+    margin-top: 20px;
+  }
 }
