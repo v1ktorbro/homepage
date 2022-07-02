@@ -1,0 +1,77 @@
+$cursorPointerThemeDay: url('../../images/cursor_pointer_day_theme.svg'), pointer;
+$imageGoPageThemeDay: url('../../images/btn_open_link_theme_day.svg');
+$imageIconTelegramThemeDay: url('../../images/icon_telegram_theme_day.svg');
+$imageIconEmailThemeDay: url('../../images/icon_email_theme_day.svg');
+$cursorPointerThemeNight: url('../../images/cursor_pointer_night_theme.svg'), pointer;
+$imageGoPageThemeNight: url('../../images/btn_open_link_theme_night.svg');
+$imageIconTelegramThemeNight: url('../../images/icon_telegram_theme_night.svg');
+$imageIconEmailThemeNight: url('../../images/icon_email_theme_night.svg');
+
+.contact-element-container {
+  list-style-type: none;
+  margin-top: 15px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.contact-element-container__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+  &_theme-day {
+    cursor: $cursorPointerThemeDay;
+  }
+  &_theme-night {
+    cursor: $cursorPointerThemeNight;
+  }
+}
+
+.contact-element-container__link-image {
+  background-size: 22px 22px;
+  width: 22px;
+  height: 22px;
+  align-self: flex-end;
+  margin-right: 5px;
+  &_theme-day {
+    &#telegram {
+      background-image: $imageIconTelegramThemeDay;
+    }
+    &#email {
+      background-image: $imageIconEmailThemeDay;
+    }
+  }
+  &_theme-night {
+    &#telegram {
+      background-image: $imageIconTelegramThemeNight;
+    }
+    &#email {
+      background-image: $imageIconEmailThemeNight;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-element-container {
+    margin-top: 10px;
+  }
+
+  .contact-element-container__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contact-element-container__link-image {
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+  }
+}

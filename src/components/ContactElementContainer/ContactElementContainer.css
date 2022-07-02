@@ -1,0 +1,64 @@
+.contact-element-container {
+  list-style-type: none;
+  margin-top: 15px;
+}
+.contact-element-container:first-of-type {
+  margin-top: 0;
+}
+
+.contact-element-container__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.contact-element-container__link:first-of-type {
+  margin-top: 0;
+}
+.contact-element-container__link_theme-day {
+  cursor: url("../../images/cursor_pointer_day_theme.svg"), pointer;
+}
+.contact-element-container__link_theme-night {
+  cursor: url("../../images/cursor_pointer_night_theme.svg"), pointer;
+}
+
+.contact-element-container__link-image {
+  background-size: 22px 22px;
+  width: 22px;
+  height: 22px;
+  align-self: flex-end;
+  margin-right: 5px;
+}
+.contact-element-container__link-image_theme-day#telegram {
+  background-image: url("../../images/icon_telegram_theme_day.svg");
+}
+.contact-element-container__link-image_theme-day#email {
+  background-image: url("../../images/icon_email_theme_day.svg");
+}
+.contact-element-container__link-image_theme-night#telegram {
+  background-image: url("../../images/icon_telegram_theme_night.svg");
+}
+.contact-element-container__link-image_theme-night#email {
+  background-image: url("../../images/icon_email_theme_night.svg");
+}
+
+@media screen and (max-width: 900px) {
+  .contact-element-container {
+    margin-top: 10px;
+  }
+
+  .contact-element-container__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contact-element-container__link-image {
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
