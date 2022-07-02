@@ -40,3 +40,18 @@ $imageGoPageThemeNight: url('../../images/btn_open_link_theme_night.svg');
     background-image: $imageGoPageThemeNight;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .education-element-container__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .education-element-container__link-image {
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
