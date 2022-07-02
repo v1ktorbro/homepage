@@ -24,3 +24,51 @@
   margin: 0;
   margin-top: 15px;
 }
+
+@media screen and (max-width: 900px) {
+  .portfolio-container {
+    margin-top: 25px;
+  }
+
+  .portfolio-container__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .portfolio-container__list {
+    padding-left: 35px;
+  }
+
+  .portfolio-container__note {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .portfolio-container {
+    margin-top: 20px;
+  }
+
+  .portfolio-container__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .portfolio-container__note {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .portfolio-container {
+    margin-top: 15px;
+  }
+
+  .portfolio-container__note {
+    max-width: 280px;
+  }
+
+  .portfolio-container__list {
+    padding-left: 30px;
+  }
+}
