@@ -76,4 +76,66 @@
   font-size: 18px;
   line-height: 20px;
   opacity: 0.4;
+  max-width: 550px;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-elem-container {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .portfolio-elem-container__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .portfolio-elem-container__btn-container {
+    margin-top: 5px;
+  }
+
+  .portfolio-elem-container__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .portfolio-elem-container__note {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .portfolio-elem-container__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .portfolio-elem-container__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .portfolio-elem-container__note {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .portfolio-elem-container__image-go {
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .portfolio-elem-container__image-gitHub {
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .portfolio-elem-container__note {
+    max-width: 280px;
+  }
 }
